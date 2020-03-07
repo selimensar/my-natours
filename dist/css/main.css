@@ -512,3 +512,140 @@ body {
   -webkit-transform: skewY(7deg);
           transform: skewY(7deg);
 }
+
+/* line 19, src/sass/pages/_home.scss */
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem;
+}
+
+/* line 1, src/sass/components/_card.scss */
+.card {
+  -webkit-perspective: 150rem;
+          perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 52rem;
+}
+
+/* line 8, src/sass/components/_card.scss */
+.card__side {
+  height: 52rem;
+  -webkit-transition: all .8s ease;
+  transition: all .8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 3px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+/* line 20, src/sass/components/_card.scss */
+.card__side--front {
+  background-color: #ffffff;
+}
+
+/* line 24, src/sass/components/_card.scss */
+.card__side--back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/* line 27, src/sass/components/_card.scss */
+.card__side--back-1 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730));
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
+}
+
+/* line 36, src/sass/components/_card.scss */
+.card:hover .card__side--front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+/* line 40, src/sass/components/_card.scss */
+.card:hover .card__side--back {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
+}
+
+/* line 46, src/sass/components/_card.scss */
+.card__picture {
+  background-size: cover;
+  height: 23rem;
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+/* line 54, src/sass/components/_card.scss */
+.card__picture--1 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730)), url(../img/nat-5.jpg);
+  background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg);
+}
+
+/* line 62, src/sass/components/_card.scss */
+.card__picture--2 {
+  background-image: url(../img/nat-5.jpg);
+}
+
+/* line 66, src/sass/components/_card.scss */
+.card__picture--3 {
+  background-image: url(../img/nat-5.jpg);
+}
+
+/* line 71, src/sass/components/_card.scss */
+.card__heading {
+  font-size: 2.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: right;
+  color: #ffffff;
+  position: absolute;
+  top: 12rem;
+  left: 2rem;
+  width: 75%;
+}
+
+/* line 83, src/sass/components/_card.scss */
+.card__heading-span {
+  padding: 1rem;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+/* line 88, src/sass/components/_card.scss */
+.card__heading-span--1 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 185, 0, 0.85)), to(rgba(255, 119, 48, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
+}
+
+/* line 93, src/sass/components/_card.scss */
+.card__details {
+  padding: 3rem;
+}
+
+/* line 95, src/sass/components/_card.scss */
+.card__details ul {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 100, src/sass/components/_card.scss */
+.card__details ul li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+/* line 105, src/sass/components/_card.scss */
+.card__details ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
