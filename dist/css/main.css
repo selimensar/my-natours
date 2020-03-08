@@ -213,6 +213,16 @@ body {
   margin-bottom: 8rem;
 }
 
+/* line 14, src/sass/base/_utilities.scss */
+.u-margin-top-big {
+  margin-top: 8rem;
+}
+
+/* line 18, src/sass/base/_utilities.scss */
+.u-margin-top-huge {
+  margin-top: 10rem;
+}
+
 /* line 2, src/sass/components/_button.scss */
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -220,13 +230,13 @@ body {
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 10rem;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
   position: relative;
   font-size: 1.6rem;
 }
 
-/* line 13, src/sass/components/_button.scss */
+/* line 14, src/sass/components/_button.scss */
 .btn:hover {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
@@ -234,14 +244,14 @@ body {
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
-/* line 17, src/sass/components/_button.scss */
+/* line 18, src/sass/components/_button.scss */
 .btn:hover::after {
   -webkit-transform: scaleX(1.4) scaleY(1 0.6);
           transform: scaleX(1.4) scaleY(1 0.6);
   opacity: 0;
 }
 
-/* line 23, src/sass/components/_button.scss */
+/* line 24, src/sass/components/_button.scss */
 .btn:active {
   -webkit-transform: translateY(-1px);
           transform: translateY(-1px);
@@ -249,18 +259,29 @@ body {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-/* line 28, src/sass/components/_button.scss */
+/* line 29, src/sass/components/_button.scss */
 .btn--white {
   background-color: #ffffff;
   color: #777777;
 }
 
-/* line 32, src/sass/components/_button.scss */
+/* line 33, src/sass/components/_button.scss */
 .btn--white::after {
   background-color: #ffffff;
 }
 
-/* line 37, src/sass/components/_button.scss */
+/* line 38, src/sass/components/_button.scss */
+.btn--green {
+  background-color: #55c57a;
+  color: #ffffff;
+}
+
+/* line 42, src/sass/components/_button.scss */
+.btn--green::after {
+  background-color: #ffffff;
+}
+
+/* line 47, src/sass/components/_button.scss */
 .btn::after {
   content: "";
   display: inline-block;
@@ -271,11 +292,11 @@ body {
   top: 0;
   left: 0;
   z-index: -1;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
 }
 
-/* line 49, src/sass/components/_button.scss */
+/* line 59, src/sass/components/_button.scss */
 .btn--animated {
   -webkit-animation: moveInBottom 0.5s ease-out 0.75s;
           animation: moveInBottom 0.5s ease-out 0.75s;
@@ -283,7 +304,7 @@ body {
           animation-fill-mode: backwards;
 }
 
-/* line 56, src/sass/components/_button.scss */
+/* line 66, src/sass/components/_button.scss */
 .btn-text:link, .btn-text:visited {
   font-size: 1.6rem;
   color: #55c57a;
@@ -293,7 +314,7 @@ body {
   padding: 3px;
 }
 
-/* line 66, src/sass/components/_button.scss */
+/* line 76, src/sass/components/_button.scss */
 .btn-text:hover {
   background-color: #55c57a;
   color: #ffffff;
@@ -303,7 +324,7 @@ body {
           transform: translateY(-2px);
 }
 
-/* line 75, src/sass/components/_button.scss */
+/* line 85, src/sass/components/_button.scss */
 .btn-text:active {
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
@@ -516,7 +537,7 @@ body {
 /* line 19, src/sass/pages/_home.scss */
 .section-tours {
   background-color: #f7f7f7;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 15rem 0;
   margin-top: -10rem;
 }
 
@@ -532,8 +553,8 @@ body {
 /* line 8, src/sass/components/_card.scss */
 .card__side {
   height: 52rem;
-  -webkit-transition: all .8s ease;
-  transition: all .8s ease;
+  -webkit-transition: all 0.8s ease;
+  transition: all 0.8s ease;
   position: absolute;
   top: 0;
   left: 0;
@@ -563,44 +584,60 @@ body {
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730);
 }
 
-/* line 36, src/sass/components/_card.scss */
+/* line 35, src/sass/components/_card.scss */
+.card__side--back-2 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+}
+
+/* line 43, src/sass/components/_card.scss */
+.card__side--back-3 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa));
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa);
+}
+
+/* line 52, src/sass/components/_card.scss */
 .card:hover .card__side--front {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
 }
 
-/* line 40, src/sass/components/_card.scss */
+/* line 56, src/sass/components/_card.scss */
 .card:hover .card__side--back {
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
 }
 
-/* line 46, src/sass/components/_card.scss */
+/* line 62, src/sass/components/_card.scss */
 .card__picture {
   background-size: cover;
   height: 23rem;
   background-blend-mode: screen;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
-/* line 54, src/sass/components/_card.scss */
+/* line 71, src/sass/components/_card.scss */
 .card__picture--1 {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730)), url(../img/nat-5.jpg);
   background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url(../img/nat-5.jpg);
 }
 
-/* line 62, src/sass/components/_card.scss */
+/* line 80, src/sass/components/_card.scss */
 .card__picture--2 {
-  background-image: url(../img/nat-5.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485)), url(../img/nat-6.jpg);
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485), url(../img/nat-6.jpg);
 }
 
-/* line 66, src/sass/components/_card.scss */
+/* line 89, src/sass/components/_card.scss */
 .card__picture--3 {
-  background-image: url(../img/nat-5.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#2998ff), to(#5643fa)), url(../img/nat-7.jpg);
+  background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url(../img/nat-7.jpg);
 }
 
-/* line 71, src/sass/components/_card.scss */
+/* line 99, src/sass/components/_card.scss */
 .card__heading {
   font-size: 2.8rem;
   font-weight: 300;
@@ -613,39 +650,81 @@ body {
   width: 75%;
 }
 
-/* line 83, src/sass/components/_card.scss */
+/* line 111, src/sass/components/_card.scss */
 .card__heading-span {
   padding: 1rem;
   -webkit-box-decoration-break: clone;
   box-decoration-break: clone;
 }
 
-/* line 88, src/sass/components/_card.scss */
+/* line 116, src/sass/components/_card.scss */
 .card__heading-span--1 {
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 185, 0, 0.85)), to(rgba(255, 119, 48, 0.85)));
   background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
 }
 
-/* line 93, src/sass/components/_card.scss */
+/* line 124, src/sass/components/_card.scss */
+.card__heading-span--2 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.85)), to(rgba(40, 180, 133, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85));
+}
+
+/* line 132, src/sass/components/_card.scss */
+.card__heading-span--3 {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(41, 152, 255, 0.85)), to(rgba(86, 67, 250, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85));
+}
+
+/* line 141, src/sass/components/_card.scss */
 .card__details {
   padding: 3rem;
 }
 
-/* line 95, src/sass/components/_card.scss */
+/* line 143, src/sass/components/_card.scss */
 .card__details ul {
   list-style: none;
   width: 80%;
   margin: 0 auto;
 }
 
-/* line 100, src/sass/components/_card.scss */
+/* line 148, src/sass/components/_card.scss */
 .card__details ul li {
   text-align: center;
   font-size: 1.5rem;
   padding: 1rem;
 }
 
-/* line 105, src/sass/components/_card.scss */
+/* line 153, src/sass/components/_card.scss */
 .card__details ul li:not(:last-child) {
   border-bottom: 1px solid #eee;
+}
+
+/* line 161, src/sass/components/_card.scss */
+.card__cta {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 90%;
+  text-align: center;
+}
+
+/* line 170, src/sass/components/_card.scss */
+.card__price-box {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 8rem;
+}
+
+/* line 177, src/sass/components/_card.scss */
+.card__price-only {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+/* line 182, src/sass/components/_card.scss */
+.card__price-value {
+  font-size: 6rem;
+  font-weight: 100;
 }
