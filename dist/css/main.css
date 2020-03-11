@@ -520,6 +520,76 @@ body {
           transform: translateY(-1.5rem) scale(1.03);
 }
 
+/* line 1, src/sass/layout/_footer.scss */
+.footer {
+  background-color: #333;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  color: #f7f7f7;
+}
+
+/* line 8, src/sass/layout/_footer.scss */
+.footer__logo-box {
+  text-align: center;
+  margin-bottom: 8rem;
+}
+
+/* line 13, src/sass/layout/_footer.scss */
+.footer__logo {
+  width: 15rem;
+  height: auto;
+}
+
+/* line 18, src/sass/layout/_footer.scss */
+.footer__navigation {
+  border-top: 1px solid #777777;
+  padding-top: 2rem;
+  display: inline-block;
+}
+
+/* line 24, src/sass/layout/_footer.scss */
+.footer__list {
+  list-style: none;
+}
+
+/* line 28, src/sass/layout/_footer.scss */
+.footer__item {
+  display: inline-block;
+}
+
+/* line 31, src/sass/layout/_footer.scss */
+.footer__item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+/* line 37, src/sass/layout/_footer.scss */
+.footer__link:link, .footer__link:visited {
+  color: #f7f7f7;
+  background-color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+/* line 48, src/sass/layout/_footer.scss */
+.footer__link:hover, .footer__link:active {
+  color: #55c57a;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+  -webkit-transform: rotate(5deg) scale(1.3);
+          transform: rotate(5deg) scale(1.3);
+}
+
+/* line 56, src/sass/layout/_footer.scss */
+.footer__copyright {
+  border-top: 1px solid #777777;
+  padding-top: 2rem;
+  width: 80%;
+  float: right;
+}
+
 /* line 1, src/sass/layout/_grid.scss */
 .row {
   max-width: 114rem;
