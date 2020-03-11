@@ -4,6 +4,21 @@
   font-size: 1.4rem;
   color: $color-gray-light-1;
 
+//   .row {
+//       .col-1-of-2 {
+//           &:first-child {
+//               text-align: left;
+//           }
+//           &:last-child {
+//               text-align: right;
+
+//               p {
+//                   text-align: left;
+//               }
+//           }
+//       }
+//   }
+
 
   &__logo-box {
     text-align: center;
@@ -13,6 +28,7 @@
   &__logo {
     width: 15rem;
     height: auto;
+   
   }
 
   &__navigation {
