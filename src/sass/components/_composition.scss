@@ -1,6 +1,14 @@
 .composition {
+    display: block;
+    
+    @include respond(tab-port) {
+        
+    display: flex;
+    justify-content: space-between;
 
-position: relative;
+    }
+
+    position: relative;
 
     &__photo {
         width: 55%;
@@ -11,9 +19,32 @@ position: relative;
         transition: all .2s;
         outline-offset: 2rem;
 
+        @include respond(tab-port) {
+            
+            position: relative;
+            width: 33.33333333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+        }
+
+        
+            
+        
+
         &--p1 {
             left: 0;
             top: -2rem;
+
+            @include respond(tab-port) {
+                top: unset;
+                left: unset;
+                transform: scale(1.2);
+            }
+
+            
 
         }
 
@@ -21,11 +52,27 @@ position: relative;
             right: 0;
             top: 2rem;
             
+            @include respond(tab-port) {
+                top: unset;
+                right: unset;
+                transform: scale(1.3);
+                z-index: 100;
+            }
+
+           
         }
 
         &--p3 {
             left: 20%;
             top: 10rem;
+
+            @include respond(tab-port) {
+                top: unset;
+                left: unset;
+                transform: scale(1.1);
+            }
+
+            
             
         }
 
@@ -41,5 +88,4 @@ position: relative;
 &:hover &__photo:not(:hover) {
     transform: scale(.95);
 }
-
 }
