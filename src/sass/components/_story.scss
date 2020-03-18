@@ -24,13 +24,20 @@
     &__shape {
         width: 15rem;
         height: 15rem;
-        float: left;
-        -webkit-shape-outside: circle(50% at 50% 50%);
-        shape-outside: circle(50% at 50% 50%);
-        -webkit-clip-path: circle(50% at 50% 50%);
-        clip-path: circle(50% at 50% 50%);
+        float: left;      
         transform: translateX(-3rem) skewX(12deg);
         position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+            -webkit-clip-path: circle(50% at 50% 50%);
+        clip-path: circle(50% at 50% 50%);
+        -webkit-shape-outside: circle(50% at 50% 50%);
+        shape-outside: circle(50% at 50% 50%);
+        border-radius: none;
+         
+        }
 
         @include respond(phone) {   
             transform: translateX(-3rem) skewX(0); 
@@ -40,7 +47,7 @@
 
     &__img {
         height: 100%;
-        transform: translateX(-4rem) scale(1.4rem);
+        transform: translateX(-4rem) scale(1.4);
         backface-visibility: hidden;
         transition: all .5s;
  
