@@ -1,5 +1,6 @@
 A description for building web projects with Gulp. Uses Gulp 4.x.
 
+<<<<<<< HEAD
 Features
 
 Concatenate, minify, and lint JavaScript.
@@ -157,3 +158,5 @@ var banner = {
 		' | <%= package.repository.url %>' +
 		' */\n'
 };
+=======
+>>>>>>> 68cd78dbf8bd8354acba68e877a12a4628344226
